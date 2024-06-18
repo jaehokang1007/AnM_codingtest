@@ -8,13 +8,14 @@ public class forPractice_06 {
 		
 		int a = sc.nextInt();
 		int sum = 0;
-		int min = 0;
 		
 		for(int i = 1; i <= a; i += 2) {
 			sum += i;
-			if(i % 2 == 0) min += i;
 		}
-		System.out.print(sum - min);
+		for(int j = 0; j <= a; j += 2) {
+			sum -= j;
+			System.out.print(sum);
+		}
 
 	}
 
